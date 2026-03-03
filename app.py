@@ -6,6 +6,9 @@ import numpy as np
 import librosa
 from pathlib import Path
 import warnings
+import sys
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
 import random
 import gradio as gr
 
@@ -57,7 +60,8 @@ def list_voices() -> list[str]:
     """List available voice files"""
     wav_dir = Path("wavs")
     if wav_dir.exists():
-        return sorted([str(f) for f in wav_dir.glob("*.wav")])
+        files = list(wav_dir.glob("*.wav")) + list(wav_dir.glob("*.mp3"))
+        return sorted([str(f) for f in files])
     return []
 
 
@@ -172,10 +176,17 @@ with gr.Blocks(
                 value="vi", label="Language"
             )
             
+            try:
+                with open("sample_text/test.txt", "r", encoding="utf-8") as f:
+                    default_text = f.read()
+            except Exception:
+                default_text = ""
+
             text_input = gr.Textbox(
                 label="Text to Synthesize",
                 placeholder="Nhập văn bản cần đọc...",
-                lines=5
+                lines=5,
+                value=default_text
             )
             
             with gr.Row():
@@ -188,15 +199,23 @@ with gr.Blocks(
             
             wav_files = list_voices()
             if wav_files:
+                default_voice = None
+                for f in wav_files:
+                    if "00_sample_voice_5s.mp3" in f:
+                        default_voice = f
+                        break
+                if not default_voice:
+                    default_voice = wav_files[0] if wav_files else None
+                    
                 ref_dropdown = gr.Dropdown(
                     choices=[(Path(f).stem, f) for f in wav_files],
                     label="Select Voice",
-                    value=wav_files[0] if wav_files else None,
+                    value=default_voice,
                 )
             else:
                 ref_dropdown = gr.Dropdown(choices=[], label="No voices in wavs/")
             
-            ref_audio = gr.Audio(label="Or Upload/Record", type="filepath", sources=["upload", "microphone"])
+            ref_audio = gr.Audio(label="Or Upload/Record", type="filepath", sources=["upload", "microphone"], value=default_voice)
             
             gr.HTML('<div class="section-title" style="margin-top: 0.75rem;">⚙️ Settings</div>')
             

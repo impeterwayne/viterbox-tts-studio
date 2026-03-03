@@ -8,9 +8,15 @@ from viterbox import Viterbox
 
 def main():
     parser = argparse.ArgumentParser(description="Viterbox Text-to-Speech")
-    parser.add_argument("--text", "-t", type=str, required=True, help="Text to synthesize")
+    try:
+        with open("sample_text/test.txt", "r", encoding="utf-8") as f:
+            default_text = f.read()
+    except Exception:
+        default_text = "Xin chào"
+
+    parser.add_argument("--text", "-t", type=str, default=default_text, help="Text to synthesize")
     parser.add_argument("--lang", "-l", type=str, default="vi", help="Language (vi/en)")
-    parser.add_argument("--ref", "-r", type=str, default=None, help="Reference audio for voice cloning")
+    parser.add_argument("--ref", "-r", type=str, default="wavs/00_sample_voice_5s.mp3", help="Reference audio for voice cloning")
     parser.add_argument("--output", "-o", type=str, default="output.wav", help="Output file path")
     parser.add_argument("--device", "-d", type=str, default="cuda", help="Device (cuda/cpu)")
     parser.add_argument("--exaggeration", type=float, default=0.5, help="Expression intensity (0.0-2.0)")

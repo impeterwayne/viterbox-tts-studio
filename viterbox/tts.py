@@ -93,7 +93,6 @@ def punc_norm(text: str) -> str:
         ("…", ", "),
         (":", ","),
         (" - ", ", "),
-        (";", ", "),
         ("—", "-"),
         ("–", "-"),
         (" ,", ","),
@@ -105,7 +104,7 @@ def punc_norm(text: str) -> str:
 
     # Add full stop if no ending punc
     text = text.rstrip(" ")
-    sentence_enders = {".", "!", "?", "-", ",", "、", "，", "。", "？", "！"}
+    sentence_enders = {".", "!", "?", ";", "-", ",", "、", "，", "。", "？", "！"}
     if not any(text.endswith(p) for p in sentence_enders):
         text += "."
 
@@ -124,8 +123,8 @@ def normalize_text(text: str, language: str = "vi") -> str:
 
 def _split_text_to_sentences(text: str) -> List[str]:
     """Split text into sentences by punctuation marks."""
-    # Split by . ? ! and keep the delimiter
-    pattern = r'([.?!]+)'
+    # Split by . ? ! ; and keep the delimiter
+    pattern = r'([.?!;]+)'
     parts = re.split(pattern, text)
     
     sentences = []
@@ -670,18 +669,16 @@ class Viterbox:
             else:
                 raise ValueError("No reference audio! Add .wav files to wavs/ folder or provide audio_prompt.")
         
-        # Normalize text (convert numbers, abbreviations to words for Vietnamese)
-        text = normalize_text(text, language)
-        
         if split_sentences:
-            # Split text into sentences
+            # IMPORTANT: Split BEFORE normalization!
+            # SoeNormalizer strips periods which would merge all sentences into one chunk.
             sentences = _split_text_to_sentences(text)
             
             if len(sentences) == 0:
                 sentences = [text]
-            elif len(sentences) == 1:
-                # Single sentence, no need for splitting logic
-                pass
+            
+            # Normalize each sentence individually (preserves sentence boundaries)
+            sentences = [normalize_text(s, language) for s in sentences]
             
             # Generate each sentence
             audio_segments = []
@@ -721,7 +718,8 @@ class Viterbox:
             else:
                 return torch.zeros(1, self.sr)  # 1 second of silence as fallback
         else:
-            # Single generation without splitting
+            # Single generation without splitting - normalize the whole text
+            text = normalize_text(text, language)
             audio_np = self._generate_single(
                 text=text,
                 language=language,
