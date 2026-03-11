@@ -1,3 +1,329 @@
-Con tàu thậm chí còn không có lấy một cái tên. Nó không có phi hành đoàn là con người bởi tàu xưởng đóng ra nó đã được sơ tán từ lâu. Nó không có hệ thống duy trì sự sống hay các khoang lưu trú cũng vì lý do tương tự. Nó không có số hiệu phân lớp hay định danh hạm đội bởi nó là một kẻ lai tạp được chắp vá từ các mảnh vụn của nhiều loại chiến hạm khác nhau. Và nó không có tên vì tàu xưởng đã chẳng còn thời gian cho những thứ mỹ miều như vậy.
-Xưởng đóng tàu đã cố gắng lắp ghép con tàu từ kho linh kiện cạn kiệt của mình. Hầu hết các hệ thống vũ khí, năng lượng và cảm biến đều bị lỗi, lỗi thời hoặc đang chờ đại tu. Tàu xưởng biết rằng sự hủy diệt của chính mình là không thể tránh khỏi. Nhưng vẫn còn một cơ hội mong manh rằng tạo vật cuối cùng của nó có thể đủ tốc độ và may mắn để trốn thoát.
-Thành phần hoàn hảo và vô giá duy nhất mà tàu xưởng sở hữu là một Trí tuệ Siêu việt cực kỳ mạnh mẽ. Thực thể mà xung quanh đó con tàu được xây dựng nên. Nếu có thể đưa nó đến nơi an toàn, tàu xưởng nghĩ rằng mình đã hoàn thành tốt nhiệm vụ.
+Năm ba mươi tuổi, Zarathustra rời xứ và hồ lên núi. Trên núi cao, Zarathustra hưởng thụ tinh thần và nỗi cô đơn của mình triền miên không hề mỏi mệt trong suốt mười năm. Nhưng sau cùng, tâm hồn Zarathustra biến đổi; một buổi sáng nọ, thức giấc cùng bình minh, Zarathustra tiến đến trước mặt trời và thốt ra những lời sau:
+
+Hỡi thiên thể vĩ đại kia! Hạnh phúc của mi sẽ ra sao nếu không có những người mà mi soi chiếu?
+
+Mười năm nay kể từ khi đến với hang đá của ta, mi sẽ chán nản mệt mề với ánh sáng và quỹ đạo của mi, nếu không có ta cùng con ó và con rắn của ta.
+Nhưng chúng ta đã đợi chờ mi mỗi sáng mai, chúng ta đã dùng phần dư thừa của mi và đã cảm tạ mi.
+
+Giờ đây, ta đã chán ngán sự khôn ngoan của ta, như con ong đã hút quá nhiều mật. Ta cần có những bàn tay vươn về với ta.
+
+Ta muốn ban cho và phân phát, mãi đến lúc những kẻ hiền minh giữa loài người lại trở nên hạnh phúc vì sự điên cuồng của họ, và những kẻ nghèo nàn được sung sướng vì sự giàu có của mình.
+
+Chính vì thế ta phải đi xuống tận những chiều sâu tương tự như mi mỗi buổi chiều khi mi biến mình sau biển cả, mang theo ánh sáng rạng rỡ cho thế giới dưới lòng đất, hỡi vì tinh tú giàu sang vô lượng kia!
+
+Ta phải biến mất như mi, ta phải lặn tắt - nói theo những người mà ta khát khao xuống cùng họ.
+
+Vậy thì, hỡi con mắt tĩnh lặng kia ơi, hãy chúc phúc cho ta, mi, kẻ có thể ngắm nhìn mà không thèm thuồng đố kỵ một hạnh phúc dẫu có quá đà.
+
+Mi hãy chúc phúc cho chén rượu muốn tràn, cho chất nước óng vàng chảy tuôn từ đó và mang theo khắp nơi phản ánh hạnh phúc tối đại của mi.
+
+Mi hãy nhìn đây! Chén rượu này lại muốn cạn không và Zarathustra muốn trở lại làm người.
+
+Cuộc hạ san của Zarathustra bắt đầu như thế.
+
+Zarathustra một mình xuống núi và không gặp một ai. Nhưng khi Zarathustra tiến vào rừng, trước mặt hắn bất ngờ hiện ra một lão trượng, ông lão đã rời chiếc chòi tranh thánh thiện của mình để đi tìm rễ cây trong rừng. Và lão trượng đã nói với Zarathustra như thế vầy:
+
+- Người lữ khách này không xa lạ với ta; cách đây nhiều năm rồi hắn đã có lần qua đây. Hắn tên là Zarathustra, nhưng hắn đã biến đổi.
+
+Lúc ấy ngươi đã mang tro tàn của ngươi về núi; nay ngươi lại muốn mang lửa nồng về thung lũng hay sao? Ngươi há không sợ hình phạt dành cho kẻ gây ra hỏa hoạn?
+
+Phải rồi, ta đã nhận ra Zarathustra. Mắt hắn trong suốt và miệng hắn chẳng biểu lộ nét nào chán ngán. Hắn chẳng bước đi như kẻ đang khiêu vũ đó sao?
+
+Zarathustra đã biến đổi. Hắn đã tự hóa thân thành trẻ thơ, hắn đã giác ngộ: giờ đây ngươi còn tìm chi bên những người đang mê ngủ?
+
+Ngươi đã sống trong cô đơn như sống giữa lòng biển cả dạt dào, và biển cả mang ngươi đi. Khổ thân cho ngươi, vậy ra giờ ngươi lại muốn dạt tấp vào bờ? Khổ thân cho ngươi, giờ ngươi lại muốn tự mình kéo lôi theo thân xác?
+
+Zarathustra trả lời: “Tôi yêu loài người”.
+
+- Vậy thì, nhà hiền triết bảo, tại sao ta lại đi vào rừng và đi vào trong nỗi cô đơn? Không phải vì ta đã quá yêu thương loài người sao?
+
+Giờ đây ta yêu thương Thượng đế; ta không thương yêu loài người. Dưới mắt ta, loài người là một cái gì quá đỗi bất toàn. Tình yêu loài người sẽ giết chết ta.
+
+Zarathustra đáp: “Nào tôi có nói đến tình yêu! Tôi đến hiến cho loài người một tặng phẩm”.
+
+Vị thánh tiếp lời:
+
+- Đừng ban cho loài người điều gì cả. Tốt hơn ngươi nên tháo gỡ họ ra khỏi một cái gì đó và giúp họ mang vác nó, chẳng gì quý hơn thế đối với họ: miễn là, điều đó cũng làm chính bản thân ngươi thỏa dạ!
+
+Và nếu ngươi muốn ban cho, thì đừng ban cho họ cái gì vượt quá một của bố thí và hãy chờ họ đến ăn mày nơi ngươi!
+
+Zarathustra đáp:
+
+- Không, tôi không bố thí. Tôi không đủ nghèo để làm việc bố thí.
+
+Vị thánh bật cười vì lời lẽ của Zarathustra và nói như vầy: “Vậy thời ngươi hãy cố gắng làm cho họ chấp nhận kho tàng của ngươi. Họ nghi ngờ những ẩn sĩ cô đơn và không tin rằng chúng ta đến để gia ơn ban phát cho họ.
+
+Đối với họ, những bước chân của chúng ta vang lên trên đường phố mang một âm thanh quá đỗi tịch liêu. Họ lại còn sinh lòng lo ngại khi ban đêm nằm ngủ trên giường, họ nghe tiếng một người lặng lẽ bước đi ngoài đường phố, rất lâu trước khi mặt trời ló dạng, có lẽ họ tự hỏi mình: “Kẻ trộm kia đang làm gì vậy?”
+
+Ngươi đừng nên đến với loài người, hãy ở lại với rừng cao! Tốt hơn nữa ngươi nên đến với những con thú! Tại sao ngươi lại không muốn được như ta, một con gấu giữa đàn gấu, một con chim giữa bầy chim?”
+
+“Và vị thánh làm gì trong rừng sâu?” Zarathustra lên tiếng hỏi.
+
+Vị thánh trả lời: “Ta sáng tác những bản nhạc và hát lên, và khi sáng tác, ta cười, ta khóc, ta gầm gừ: đó là cách ta ngợi ca Thượng đế.
+
+Bằng những bài ca, những tiếng khóc, tiếng cười, tiếng gầm gừ, ta tạ ơn Thượng đế của ta. Nhưng còn ngươi, ngươi mang đến món quà gì cho chúng ta?”
+
+Khi Zarathustra nghe hết những lời này, hắn cúi chào vị thánh và bảo: “Tôi có thể cho ngài gì đây? Thôi, xin ngài hãy để tôi đi ngay, cốt cho tôi đừng lấy của ngài món gì cả!” Rồi hai người, ông lão và người đàn ông, chia tay nhau như thế, tươi cười như hai đứa bé.
+
+Nhưng khi Zarathustra một mình, hắn tự hỏi lòng: “Có thể như thế được chăng? Vị thánh già nua sống trong rừng thẳm ấy hãy còn chưa nghe nói rằng Thượng đế đã chết rồi sao?”
+
+Khi Zarathustra đặt chân vào thành phố gần nhất ven rừng, hắn gặp một đám đông đang tụ họp trên công trường, vì người ta báo trước rằng một người làm trò đi dây xiếc sắp biểu diễn. Và Zarathustra nói với dân chúng như vầy:
+
+Ta rao giảng với các ngươi về Siêu nhân. Con người là cái gì cần phải được vượt qua. Các ngươi đã làm gì để vượt qua con người?
+
+Cho đến nay, tất cả những sinh vật đều đã sáng tạo nên một cái gì vượt quá chúng, các ngươi lại muốn mình là nghịch triều trong cơn sóng lớn ấy, muốn quay trở lại với con thú hơn là vượt qua con người sao?
+
+Con khỉ đối với con người là gì? Một đối tượng cười nhạo hay một sự hổ thẹn đầy đớn đau. Và con người cũng phải như thế đối với Siêu nhân: một đối tượng để cười nhạo hay một hổ thẹn đớn đau.
+
+Các ngươi đã vượt qua con đường dẫn từ loài sâu bọ đến loài người, nhưng về nhiều phương diện, các ngươi vẫn còn là loài sâu bọ. Xưa kia các ngươi đã là loài khỉ và cả bây giờ nữa, con người còn khỉ hơn bất luận con khỉ nào.
+
+Ngay kẻ hiền triết nhất trong các ngươi cũng chỉ là một cái gì phân tán và hỗn tạp: nửa cây nửa ma. Thế mà, ta có mời gọi các ngươi trở thành cây cối hay ma quỷ không?
+
+Này đây, ta rao dạy cho các ngươi Siêu nhân!
+
+Siêu nhân là chiều hướng, là ý nghĩa của trái đất. Ý chí các ngươi phải bảo: Siêu nhân phải là chiều hướng, ý nghĩa của trái đất.
+
+Hỡi những người anh em, ta van xin các ngươi, hãy trung thành với mặt đất và chớ có tin những kẻ nói với các ngươi về những hy vọng lững lờ bên trên mặt đất! Họ là những kẻ đầu độc, dẫu họ có ý thức điều đó hay không.
+
+Họ là những kẻ khinh miệt đời sống, những kẻ hấp hối và cũng chính là những kẻ bị đầu độc, mặt đất đã quá mỏi mệt chán chê họ: họ hãy cút đi cho khuất mắt!
+
+Xưa kia, báng bổ Thượng đế là lời báng bổ nặng nhất, nhưng Thượng đế đã chết và cũng chết theo Thượng đế là những kẻ báng bổ ấy. Giờ đây, điều đáng kinh khiếp hơn nhiều, là báng bổ mặt đất và coi trọng ruột rà của cái bất khả thấu nhập hơn ý nghĩa, chiều hướng của mặt đất!
+
+Xưa kia, linh hồn đưa mắt nhìn thân xác với vẻ khinh miệt, và lúc bấy giờ, chẳng có gì cao cả hơn sự khinh miệt ấy: linh hồn muốn cho thân xác ốm o, khả ố, đói khát! Làm thế, linh hồn tưởng là đã thoát được thân xác, thoát được thân xác và mặt đất!
+
+Ôi! Linh hồn ấy chính nó cũng còn ốm o, khả ố và đói khát: và sự tàn bạo là nỗi khoái lạc của linh hồn này.
+
+Nhưng cả các ngươi nữa, hỡi những anh em của ta, hãy nói cho ta biết: thân xác các ngươi báo hiệu gì được cho linh hồn các ngươi? Linh hồn các ngươi há chẳng phải là sự nghèo nàn, nhơ bẩn cùng sự tự mãn đáng thương sao?
+
+Thật ra, con người là một dòng sông nhơ bẩn. Phải là biển cả bao la mới có thể dung thông tiếp nhận một dòng sông uế trược mà không bị nhiễm ô.
+
+Này đây, ta rao giảng cho các ngươi về Siêu nhân: Siêu nhân là biển cả bao la nơi cơn khinh bỉ ngút ngàn của các ngươi có thể đến dìm mình vào đó.
+
+Còn gì cao nhã trác việt có thể đến với các ngươi cho bằng giờ phút của sự khinh bỉ ngất trời? Giờ phút mà ngay cả hạnh phúc, lý trí cùng đức hạnh của các ngươi cũng biến thành kinh tởm.
+
+Giờ phút mà các ngươi bảo rằng: “Sá gì hạnh phúc của ta! Hạnh phúc ấy là sự nghèo nàn, nhơ bẩn và sự tự mãn đáng thương. Thế mà, hạnh phúc của ta lẽ ra phải làm cho chính cuộc hiện sinh thành chính đáng!”
+
+Giờ phút mà các ngươi bảo rằng: “Sá gì lý trí ta! Lý trí ấy có khát khao hiểu biết, như con sư tử khát khao lương thực không? Lý trí chỉ là sự nghèo nàn, nhơ bẩn và sự tự mãn đáng thương!”
+
+Giờ phút mà các ngươi bảo rằng: “Sá gì đức hạnh của ta! Nó hãy còn chưa làm ta thành mê sảng. Ta chán nản mệt mỏi với những điều thiện và điều ác của mình lắm rồi! Tất cả những thứ đó chỉ là sự nghèo nàn, nhơ bẩn và sự tự mãn đáng thương!”
+
+Giờ phút mà các ngươi bảo rằng: “Sá gì sự công chính của ta! Chẳng có lửa nồng nào bao phủ trong ta. Thế mà, kẻ công chính giống như một thỏi than nóng bỏng!”
+
+Giờ phút mà các ngươi bảo rằng: “Sá gì sự thương hại nơi ta! Lòng thương hại há chẳng phải là cây thập giá nơi thiên hạ đóng đinh kẻ yêu thương loài người sao? Nhưng lòng thương hại của ta không phải là một cuộc đóng đinh.”
+
+Các ngươi đã từng nói như vậy bao giờ chưa? Các ngươi đã từng thét lớn như vậy bao giờ chưa? Hỡi ôi! Giá gì ta đã được nghe các ngươi thét to lên những lời như thế!
+
+Không phải tội lỗi, nhưng chính sự tự mãn của các ngươi đang kêu gào chống lại trời xanh, chính sự bủn xỉn của các ngươi, ngay cả trong tội lỗi, đang ra sức kêu gào với trời xanh!
+
+Vậy thời, đâu là lằn chớp dữ đến liếm lưỡi vào các ngươi? Đâu là cơn điên cuồng phải thấm nhập vào các ngươi?
+
+Này đây, ta rao dạy cho các ngươi về Siêu nhân: Siêu nhân chính là lằn chớp dữ, chính là cơn điên cuồng đó!
+
+Khi Zarathustra đã nói như thế, có một kẻ trong đám đông kêu to lên: “Chúng tôi nghe nói khá nhiều về người đi dây làm xiếc rồi: giờ hãy cho chúng tôi thấy mặt y thôi!” Và cả đám dân chúng rộ lên cười Zarathustra. Nhưng người đi dây làm xiếc lại tưởng thiên hạ nói đến mình, nên liền khởi đầu biểu diễn.
+
+Trong khi đó, Zarathustra lặng nhìn đám dân chúng, lòng đầy kinh ngạc. Rồi Zarathustra lên tiếng:
+
+Con người là một sợi dây căng thẳng giữa con thú và Siêu nhân - sợi dây căng ngang một hố thẳm.
+
+Vượt qua hố thẳm: nguy hiểm; cất bước giữa đường đi: nguy hiểm; nhìn lại đằng sau: nguy hiểm - rùng mình sởn ốc và đứng dừng: nguy hiểm.
+
+Điều cao đại nhất nơi con người nằm ở chỗ con người là một chiếc cầu chứ không phải một mục tiêu; điều mà ta có thể yêu thương nơi con người là: con người là một sự chuyển tiếp và một sự suy tàn.
+
+Ta yêu những kẻ nào chỉ biết sống bằng cách làm cho mình trầm một, diệt vong, vì họ đang bước qua bờ bến bên kia.
+
+Ta yêu những kẻ khinh bỉ ngất trời, vì họ chính là những kẻ ngưỡng mộ mê cuồng, những mũi tên của khát vọng lao vút qua bến bờ bên kia.
+
+Ta yêu những kẻ không để tâm tìm kiếm bên kia những vì sao một lý lẽ để diệt vong hay để hy sinh, mà trái lại chỉ hy sinh dâng hiến cho mặt đất, để một ngày kia, thời đại của Siêu nhân ngự trị trên mặt đất.
+
+Ta yêu kẻ nào sống để hiểu biết và muốn hiểu biết để cho một ngày kia Siêu nhân được sống mãi. Như thế là họ cũng ước muốn chính sự suy tàn của mình.
+
+Ta yêu kẻ nào làm việc và phát minh, để xây dựng nơi trú ngụ cho Siêu nhân, để sửa soạn đất đai, thú vật cùng cây cối cho Siêu nhân xuất hiện: vì như thế là ước muốn chính sự suy tàn của mình.
+
+Ta yêu kẻ nào yêu mến chính đức hạnh của họ: bởi vì đức hạnh là một ý chí muốn sự suy tàn, và một mũi tên của khát vọng.
+Ta yêu kẻ nào không dành lại cho chính mình một mảnh nhỏ nào của tinh thần, kẻ nào muốn hoàn toàn là tinh thần của đức hạnh mình: vì với tư cách là tinh thần như thế, họ băng vượt qua cầu.
+
+Ta yêu kẻ biến đức hạnh mình thành ý hướng và vận mệnh của chính mình: vì như thế, do tình yêu đức hạnh của chính mình, họ mới khát khao sống thêm và không sống thêm nữa.
+
+Ta yêu kẻ nào không khát khao có quá nhiều đức hạnh. Có nhiều đức hạnh trong một đức hạnh duy nhất hơn là trong hai đức hạnh: đấy là một nút thắt nơi số mệnh đan kết.
+
+Ta yêu kẻ nào có linh hồn phung phá, không muốn người khác cảm ơn mình và cũng chẳng hồi trả lại: bởi vì họ luôn luôn ban phát và không muốn trì thủ lấy cho mình.
+
+Ta yêu kẻ nào hổ thẹn khi vận may ngả về với mình, và tự đặt câu hỏi: ta có gian lận chăng? - bởi vì họ muốn diệt vong.
+
+Ta yêu kẻ nào ném ra những lời vàng ngọc đằng trước những hành vi của họ và luôn luôn giữ đúng hơn những gì mình hứa: bởi vì họ muốn chính sự suy tàn của mình.
+
+Ta yêu kẻ nào biện chính cho những người trong tương lai và giải thoát cho những người trong quá khứ, vì họ muốn diệt vong bởi những người hiện tại.
+
+Ta yêu kẻ trừng phạt Thượng đế của mình vì yêu Thượng đế đó: cần phải để cho cơn phẫn nộ của Thượng đế họ làm họ diệt vong.
+
+Ta yêu kẻ nào tâm hồn sâu thẳm, ngay cả trong vết thương, kẻ mà một tai ương nhỏ bé nhất cũng có thể làm họ diệt vong; vì họ sẽ hân hoan vượt qua cầu không hề do dự.
+
+Ta yêu kẻ nào tâm hồn tràn đầy viên mãn đến độ tự quên chính mình, và tất cả mọi sự đều được cưu mang trong họ: như thế tất cả mọi sự đều sẽ trở thành sự suy tàn của chính họ.
+
+Ta yêu kẻ nào tự do tự tại trong tâm hồn và trong tinh thần: như thế đầu óc họ chỉ dùng làm ruột rà cho quả tim, nhưng quả tim họ kéo họ về sự suy tàn.
+
+Ta yêu những kẻ nào tựa như những giọt nặng đang kiên trì rơi từng giọt một từ tảng mây tối ám lơ lửng trên đầu loài người: họ báo trước lằn chớp dữ đang đến và diệt vong với tư thế là những người tiên báo.
+
+Này đây, ta là một đấng tiên tri của sấm sét, một giọt nặng rơi từ mây xuống: sấm sét đó tên là Siêu nhân.
+
+Khi Zarathustra đã nói xong những lời này, hắn lại nhìn đám dân chúng lần nữa, rồi im lặng tự nhủ lòng mình:
+
+Họ đang phá ra cười kìa; họ chẳng hề hiểu ta, miệng ta không hợp cho những lỗ tai đó.
+
+Liệu ta có phải chọc thủng tai họ để cho họ học nghe bằng mắt? Liệu ta có phải đánh chũm chọe và la gào như những linh mục thuyết giáo trong tuần chay? Hoặc giả dân chúng chỉ tin vào những kẻ ăn nói cà lăm?
+
+Họ có một cái gì đó làm họ hãnh diện. Vậy, họ gọi tên cái đang làm họ hãnh diện là gì? Họ gọi đó là nền văn minh, chính nền văn minh làm họ khác biệt với kẻ chăn dê.
+
+Chính vì thế, về những người đó, họ không thích nghe chữ “khinh bỉ”. Vậy thời ta sẽ ngỏ lời với lòng kiêu hãnh của họ.
+
+Ta sẽ nói cho họ nghe về điều đáng khinh bỉ hơn cả: đấy là con người cuối cùng hay con người hạ đẳng nhất.
+
+Và Zarathustra nói với dân chúng như vầy:
+
+“Đã đến lúc con người tự đặt cho mình một mục tiêu. Đã đến lúc con người vun trồng mầm mống hy vọng cao đại nhất của mình.
+
+Đất đai con người hiện giờ hãy còn khá màu mỡ. Nhưng một ngày kia, đất đai ấy sẽ thành khô kiệt nghèo nàn, và chẳng một cây đại thụ nào còn có thể mọc lên ở đó nữa.
+
+Than ôi! Đã gần đến lúc mà con người không còn bắn vượt qua con người mũi tên của khát vọng họ, lúc mà dây cung của họ sẽ không thể rung vang nữa!
+
+Ta nói thật cùng các ngươi điều này: phải còn mang theo mình sự hỗn mang, mới có thể làm nảy sinh một ngôi sao lung linh điệu vũ. Ta nói thật cùng các ngươi điều này: các ngươi đang mang trong bản thân mình một sự hỗn mang.
+
+Hỡi ôi! Đã gần đến lúc mà loài người không còn khai sinh ra những vì sao mới trên trần thế nữa. Hỡi ôi! Đã gần đến lúc xuất hiện kẻ đáng khinh bỉ nhất của loài người, kẻ không còn tự biết khinh bỉ chính mình.
+
+Này đây, ta tả cho các ngươi về con người hạ đẳng nhất.
+
+“Tình yêu? Sáng tạo? Khát vọng? Sao trên trời? Mấy cái đó là thứ gì vậy?” Con người hạ đẳng nhất hỏi như thế và nheo nheo một mắt.
+
+Mặt đất sẽ trở thành chật hẹp hơn và con người hạ đẳng nhất nhảy cà tưng cà tang trên đó, con người thu nhỏ tất cả mọi sự lại. Dòng giống hắn cũng vững bền không thể hủy diệt được như loài rệp cây; con người hạ đẳng nhất là kẻ sống rất dai.
+
+“Chúng tôi đã phát minh ra hạnh phúc”, những người hạ đẳng nhất nói như thế và họ nheo nheo một mắt.
+Họ đã bỏ rơi những xứ miền ở đó đời sống kham khổ: vì họ đang cần sức nóng. Họ hãy còn yêu kẻ láng giềng đồng loại và họ cọ xát vào người này: vì họ đang cần hơi nóng.
+
+Đối với họ, ngã bệnh hoặc sống với lòng hoài nghi là một tội lỗi: họ thận trọng tiến bước trên đời. Thật quả là kẻ điên mới còn va chạm những hòn đá hay những con người!
+
+Một ít thuốc độc nơi này, nơi nọ: điều đó ban cho họ những giấc mộng thoải mái. Và sau cùng, nhiều thuốc độc để được chết một cách thoải mái.
+
+Người ta cũng hãy còn làm việc, vì việc làm là một sự phóng tâm tiêu khiển. Nhưng người ta cẩn trọng lưu tâm sao cho sự phóng tâm tiêu khiển ấy không làm mình mệt.
+
+Người ta không còn trở thành nghèo hay giàu nữa: chuyện đó quá đỗi khó nhọc. Ai là kẻ còn muốn cai trị?Ai là kẻ còn muốn được vâng lời? Chuyện đó quá đỗi khó nhọc.
+
+Chẳng có lấy một người chăn chiên, chỉ rặt một đàn cừu! Ai nấy đều ước muốn cùng một điều; mọi người đều bình đẳng: kẻ nào mang một tâm trạng khác sẽ sẵn lòng vào nhà thương điên.
+
+“Ngày xưa, mọi người đều điên cả”, những kẻ tinh tế nhất trong bọn họ bảo thế, và họ nheo nheo một mắt.
+
+Họ thận trọng và biết tỏ tường những gì đã xảy ra: đến độ họ không ngớt chế giễu mình về chuyện ấy. Họ cũng còn cãi vã nhau đấy, nhưng để rồi hòa giải với nhau ngay - sợ rằng làm đau dạ dày.
+
+Họ cũng hơi thinh thích ban ngày và hơi thinh thích ban đêm: nhưng điều họ tôn sùng là sức khỏe.
+
+“Chúng tôi đã phát minh ra hạnh phúc”, những con người hạ đẳng bảo thế, và họ nheo nheo một con mắt”.
+
+Đến đây kết thúc bài thuyết pháp đầu tiên của Zarathustra, bài thuyết pháp cũng được người đời gọi là “Tự ngôn”, bởi vì vào lúc ấy, Zarathustra bị ngắt lời bởi những tiếng kêu thét và nỗi vui mừng nhốn nháo của đám đông. “Hỡi Zarathustra! Hãy ban cho chúng tôi con người hạ đẳng nhất ấy - họ kêu lên, - hãy làm cho chúng tôi trở thành giống như những người hạ đẳng nhất ấy! Chúng tôi sẽ khỏi mang nợ Siêu nhân của Zarathustra!” Và toàn thể dân chúng vui mừng sung sướng chậc lưỡi nghe rào rào. Song Zarathustra buồn bã tự nhủ lòng mình:
+
+“Họ chẳng hề hiểu ta: miệng ta không có lời hợp cho những lỗ tai đó.
+
+Hẳn là ta đã sống quá lâu trên núi, ta lắng nghe quá nhiều âm thanh suối nước róc rách cùng tiếng cây cối rì rào: giờ đây ta lại nói với họ như nói với những kẻ chăn dê.
+
+Linh hồn ta thanh thản trong sáng như một ngọn núi ban mai. Nhưng họ lại tưởng ta là người lạnh lẽo và xem ta như một kẻ làm trò hề đang thốt những lời bông lơn trâng tráo.
+
+Và kìa, họ đang nhìn ta và cười rộ: trong khi cười, họ vẫn còn thù ghét ta. Có nỗi gì băng giá trong tiếng cười của họ”.
+
+Nhưng vào lúc ấy xảy ra một điều làm cho mọi cửa miệng đều câm tiếng cười và mọi con mắt đều nhìn sững. Vì trong thời gian ấy, người đi dây làm trò xiếc đã khởi sự biểu diễn: anh ta bước ra từ một con đường ngầm ở bờ thành rồi bước đi trên sợi dây căng thẳng giữa hai ngọn tháp, bên trên công trường và đám đông dân chúng. Vào lúc anh ta đang ở ngay giữa đường dây, cánh cửa lại bật mở ra lần nữa, rồi một gã thanh niên quần áo sặc sỡ trông giống như một thằng hề, nhảy ra ngoài rượt mau theo anh chàng đi dây xiếc. Gã cất cái giọng khủng khiếp kêu to: “Tiến lên, đồ khập khễnh, tiến lên mau, đồ chậm chạp, nham hiểm, đồ mặt tái xanh vì sợ hãi! Mau lên không thôi ta sẽ thọc lét mi bằng gót chân ta! Mi đang làm gì giữa hai ngọn tháp vậy? Lẽ ra mi phải bị nhốt trong tháp mới đúng; mi đang cản đường một kẻ tài giỏi hơn mi!” - Và cứ dứt mỗi lời gã lại tiến đến gần anh chàng đi dây thêm một tý; nhưng khi gã chỉ còn cách anh chàng đi dây một bước thì xảy ra chuyện khủng khiếp này làm mọi cửa miệng đều câm tiếng và mọi con mắt đều sững sờ: thằng hề rú lên một tiếng kêu quái dị rồi nhảy qua đầu anh chàng đi dây đang cản đường. Khi nhìn thấy kẻ địch mình chiến thắng, anh chàng đi dây điên đầu lảo đảo hụt chân khỏi dây; chàng ta mất thăng bằng và nhanh như chớp, rơi vào hố thẳm, như một cơn lốc xoáy bằng tay chân người. Công trường và đám đông dân chúng tựa như biển cả khi dông tố nổi lên. Mọi người bỏ chạy hỗn loạn, nhất là đúng nơi mà thân xác chàng đi dây sắp rơi xuống.
+
+Trong lúc đó Zarathustra chẳng hề nhích động, và tấm thân ấy rơi đúng ngay cạnh hắn, rách nát, gãy vụn, nhưng hãy còn sống. Một lúc sau, người bị thương định tỉnh lại và nhìn thấy Zarathustra đang quỳ gối gần anh ta; “Ngài làm gì đấy? chàng ta lên tiếng hỏi. Từ lâu tôi biết rằng sẽ có lúc ma quỷ ngáng chân cho tôi ngã. Giờ đây ma quỷ đang lôi tôi về hỏa ngục: ngài muốn cản đường ma quỷ đừng làm thế chăng?”
+
+- Bạn hỡi, tôi xin đem danh dự bảo cùng bạn: tất cả những điều bạn nói đều không có thực; chẳng có ma quỷ, cũng chẳng có hỏa ngục. Linh hồn bạn sẽ chết, còn chết nhanh hơn là thân xác bạn nữa: vậy, bạn chớ sợ hãi bất luận điều gì!”
+
+Chàng đi dây ngước mắt lên nhìn, ngờ vực. Rồi sau đó chàng ta trả lời: “Nếu quả ngài nói thực, tôi chẳng mất mát gì khi mất đi sự sống. Tôi chỉ còn là một con vật mà người ta bắt nhảy múa bằng những nhát roi và những cái miệng ốm o”.
+
+- Không đâu, Zarathustra đáp, bạn đã lấy nguy hiểm làm nghề của mình, chuyện đó chẳng có gì đáng khinh cả. Giờ đây nghề nghiệp bạn xô bạn vào cõi chết, vì vậy ta sẽ tự tay mai táng bạn”.
+
+Khi Zarathustra dứt lời, kẻ hấp hối không trả lời nữa; nhưng bàn tay chàng ta sờ soạng như muốn tìm bàn tay Zarathustra để tạ ơn.
+
+Trong khi đó, hoàng hôn chậm buông và công trường phủ đầy bóng tối; đám đông tản mát ra về vì ngay cả sự tò mò và sự sợ hãi cũng làm cho họ chán. Nhưng Zarathustra vẫn ngồi trên mặt đất, cạnh xác chết, tâm hồn chìm đắm trong những suy tư: Zarathustra đã quên bẵng thời gian. Sau cùng, đêm xuống và một ngọn gió lạnh thổi qua con người cô đơn. Lúc ấy, Zarathustra mới đứng dậy, tự nhủ lòng mình:
+
+“Ngày hôm nay, thật ra Zarathustra đã đánh được một mẻ cá hời! Zarathustra đã không đánh lưới được người sống, nhưng là một xác chết.
+
+Đời sống con người quả thật lạ lùng và bao giờ cũng tối ư vô nghĩa: một thằng hề cũng có thể trở thành điều bất hạnh giáng lên đầu nó.
+
+Ta muốn giảng dạy cho loài người chiều hướng cùng ý nghĩa của cuộc hiện sinh: đó là Siêu nhân, lằn chớp dữ lóe ra từ đám mây ảm đạm là con người.
+
+Nhưng ta hãy còn xa cách họ và tinh thần ta không nói cùng lương năng họ. Đối với loài người, ta hãy còn đứng giữa một thằng điên và một xác chết.
+
+Đêm tối thật mịt mùng, và mịt mùng là những con đường Zarathustra dấn bước. Hãy đến đây, hỡi người bạn đồng hành cứng đơ giá lạnh! Ta mang bạn đến một nơi mà tự tay ta sẽ mai táng bạn”.
+
+Khi Zarathustra đã tự nhủ lòng như thế rồi, hắn vác xác chết trên vai và khởi sự lên đường. Nhưng đi chưa được trăm bước thì có một người lẻn đến bên Zarathustra thì thầm bên tai hắn - kẻ đang thì thầm với hắn lại chính là thằng hề trên tháp! Gã thì thào: “Hỡi Zarathustra! Hãy mau rời khỏi thành phố này vì nơi đây có quá nhiều người thù ghét ngài. Những người thiện hảo và công chính thù ghét ngài, họ gọi ngài là kẻ thù và người khinh miệt họ; những tín đồ của đức tin đích thực thù ghét ngài và gọi ngài là mối nguy hiểm cho đám đông. Ngài hãy còn may là được người ta chế giễu, vì thực sự ngài đã ăn nói như một thằng hề. Ngài hãy còn may vì làm bạn với tên chó chết: khi tự hạ mình như thế, ngài đã tự cứu mình được lần này. Nhưng ngài hãy mau lìa bỏ thành phố - bằng không, ngày mai là người sống, tôi sẽ nhảy qua một xác chết”. Sau khi thì thầm như vậy với Zarathustra, thằng hề biến dạng; và Zarathustra tiếp tục hành trình qua những con đường tối ám.
+
+Ở cổng ra vào thành phố, những người phu đào huyệt bắt gặp Zarathustra; họ đưa đuốc soi mặt hắn, và khi nhận ra Zarathustra, họ chế giễu: “Zarathustra mang theo thằng chó chết! Hoan hô, Zarathustra làm kẻ đào huyệt! Vì chúng ta có những bàn tay quá sạch để đào mồ chôn con thịt ấy. Vậy ra Zarathustra muốn ăn trộm thức ăn của quỷ à? Can đảm dữ. Thích thú tợn! Miễn là quỷ sứ đừng ăn trộm khéo hơn Zarathustra! - Quỷ sứ sẽ ăn trộm cả hai người, hắn ta sẽ ngấu thịt cả hai người!” Rồi họ cùng chụm đầu cười vang với nhau.
+
+Zarathustra không thốt một lời, tiếp tục con đường. Sau suốt hai giờ đi dọc theo những khu rừng cùng những đầm lầy, Zarathustra cứ nghe mãi những tiếng chó sói tru rống vì đói mồi đến đỗi cơn đói cũng cào xé chính lòng hắn. Vì vậy, Zarathustra dừng bước trước một căn nhà lẻ loi, bên trong có ánh lửa lập lòe soi chiếu. Zarathustra tự nhủ lòng mình: “Cơn đói bắt chộp lấy ta như một tên cướp. Giữa những khu rừng cùng những đầm lầy, cơn đói bắt chộp lấy ta, trong đêm tối dày đặc mịt mùng.
+
+Cơn đói của ta có những ý thích bốc đồng. Thường ta chỉ thấy đói sau bữa ăn, và suốt ngày hôm nay, cơn đói chẳng chịu đến: vậy thì cơn đói đã lê lết chậm trễ nơi nao?”
+
+Nhủ xong, Zarathustra gõ cửa. Một lão trượng xuất hiện; ông lão mang theo đèn và lên tiếng hỏi: “Ai đến với ta cùng giấc ngủ trằn trọc của ta đó?”
+
+- Một người sống và một kẻ chết, Zarathustra trả lời. Xin lão trượng cho tôi ăn uống; cả ngày nay tôi đã quên ăn uống. Kẻ nào cho người đói khát ăn uống sẽ bồi bổ nguyên khí tâm hồn mình: minh triết khôn ngoan dạy như thế”.
+
+Ông lão trở vào nhà, nhưng rồi lại trở ra ngay, và đưa cho Zarathustra bánh cùng rượu: “Đây là một vùng tàn bạo cho những kẻ đói khát, ông lão lên tiếng: vì vậy ta mới cư ngụ tại đây. Người và vật đến với ta, nhà ẩn sĩ. Nhưng ngươi hãy mời người bạn đồng hành của ngươi ăn uống đi chứ, y coi bộ còn mỏi mệt hơn ngươi”.
+
+Zarathustra trả lời:
+
+“Bạn đồng hành của tôi đã chết rồi, tôi sẽ khó mà ép y ăn uống”.
+
+Ông lão càu nhàu:
+
+“Chuyện đó chẳng liên can gì với ta; kẻ nào gõ cửa nhà ta phải dùng những gì ta dâng mời. Các ngươi hãy ăn uống và chúc các ngươi sức khỏe!”
+
+Sau đó, Zarathustra còn đi bộ thêm hai giờ nữa, dò dẫm theo những con đường và tin vào ánh sáng của những vì sao: vì hắn đã quen đi đêm và thích nhìn tận mặt những gì còn đang say ngủ. Nhưng khi ánh triêu dương ló dạng, Zarathustra thấy mình đang ở trong một khu rừng sâu mịt mùng chung quanh chẳng thấy rõ một lối đi nào. Lúc bấy giờ Zarathustra đặt xác chết vào một thân cây rỗng, cao hơn tầm đầu - hắn muốn lũ chó sói khỏi với tới - rồi ngả người nằm nghỉ trên rong rêu xanh mát. Liền đó, Zarathustra thiếp ngủ, thân thể mệt nhoài, nhưng linh hồn thanh thản.
+
+Zarathustra ngủ thật triền miên, không những ánh triêu dương vờn trên mặt hắn mà cả ánh sáng ban mai. Sau cùng Zarathustra mở mắt: kinh ngạc, Zarathustra ngắm nhìn khu rừng và sự tĩnh mịch, kinh ngạc, Zarathustra nhìn bản thân mình. Rồi như một gã lính thủy đột nhiên nhìn thấy đất liền, hắn vụt đứng dậy, thét lên một tiếng mừng rỡ: hắn vừa nhìn thấy một chân lý mới. Và Zarathustra tự nhủ lòng mình như sau:
+
+“Ta bắt đầu thấy rõ: ta đang cần những người bạn đồng hành, những người bạn đồng hành còn sống - chứ không phải những người bạn đồng hành đã chết và những tử thi mà ta mang theo nơi nào ta muốn tới.
+Ta đang cần những người bạn đồng hành còn sống theo bước ta, vì họ muốn tự theo bước chính họ - khắp mọi nơi ta muốn đến.
+
+Ta bắt đầu thấy rõ: Zarathustra chẳng nên ngỏ lời cùng đám đông mà chỉ nên lên tiếng với những người bạn đồng hành! Zarathustra chẳng nên biến thành người chăn chiên và con chó canh giữ một đàn chiên!
+
+Ta đã đến chính là để tách lìa nhiều con chiên khỏi đàn chiên. Đám đông dân chúng và bầy chiên sẽ căm phẫn ta: những kẻ chăn chiên sẽ xem Zarathustra là tên trộm đạo.
+
+Ta gọi họ là những kẻ chăn chiên, nhưng thật ra họ có tên là những con người thiện hảo và những kẻ công chính. Ta gọi họ là những kẻ chăn chiên, nhưng thực ra họ có tên là những tín đồ của đức tin đích thực!
+
+Hãy nhìn những con người thiện hảo và những kẻ công chính! Họ thù ghét kẻ nào nhất? Kẻ đứng lên đập vỡ những bảng giá trị của họ, kẻ hủy hoại, kẻ phạm tội trọng: thế mà, đó là kẻ sáng tạo.
+
+Hãy nhìn những tín đồ của đức tin đích thực! Họ thù ghét kẻ nào nhất? Kẻ đứng lên đập vỡ những bảng giá trị của họ, kẻ hủy hoại, kẻ phạm tội trọng: thế mà, đó là kẻ sáng tạo.
+
+Điều mà kẻ sáng tạo tìm kiếm, chính là những bạn đồng hành, chứ không phải những xác chết, những bầy chiên và những đám tín đồ. Những con người sáng tạo như hắn, đấy chính là điều mà kẻ sáng tạo tìm kiếm - những con người ghi khắc những giá trị mới trên những tấm bảng tinh khôi.
+
+Điều mà kẻ sáng tạo tìm kiếm, chính là những bạn đồng hành, những người thợ gặt để trợ giúp hắn: vì nơi hắn, mọi sự đều chín muồi cho mùa gặt. Nhưng hắn lại thiếu trăm ngàn lưỡi hái: vì thế kẻ sáng tạo giận dữ điên cuồng bứt ra những bông lúa của mình.
+
+Điều mà kẻ sáng tạo tìm kiếm, chính là những bạn đồng hành, những người biết mài sắc lưỡi hái của mình. Người ta sẽ gọi họ là những kẻ phá hoại và những kẻ khinh miệt thiện ác. Nhưng chính họ là những con người sẽ gặt hái và cử hành lễ vui.
+
+Những con người sáng tạo như mình, đấy là điều mà Zarathustra đang tìm kiếm, những con người gặt hái và vui hưởng cùng với mình: nào có làm gì được với những đàn chiên, những kẻ chăn chiên và những xác chết!
+
+Còn ngươi, người bạn đồng hành đầu tiên của ta, xin hãy an nghỉ! Ta đã mai táng ngươi cẩn thận trong lòng cây rỗng, ta đã cẩn trọng đề phòng cho ngươi khỏi bị sói tha.
+
+Nhưng ta rời ngươi đây, thời gian đã trọn rồi. Giữa hai buổi bình minh, một chân lý mới đã hiện đến với ta.
+
+Ta chẳng nên làm người chăn chiên, cũng chẳng nên làm kẻ đào huyệt. Ta sẽ chẳng bao giờ ngỏ lời với dân chúng; đây là lần cuối cùng, ta ngỏ lời với một xác chết. Ta muốn tìm gặp những con người sáng tạo; những con người gặt hái và vui hưởng: ta muốn chỉ cho họ thấy bảy sắc cầu vồng cùng tất cả những bậc thang dẫn đến Siêu nhân.
+
+Ta sẽ ca hát bài ca của ta cho những nhà ẩn sĩ, những con người hai bóng trong cô đơn; và cho bất luận ai còn tai nghe được những điều kỳ diệu, ta sẽ làm tim ta trĩu nặng vĩnh phúc tuyệt vời.
+
+Ta tiến bước về mục tiêu của ta, ta đi trên con đường của ta; ta sẽ nhảy qua đầu những kẻ ngập ngừng do dự và những kẻ trì chậm lối đi. Bước đi của ta sẽ là sự suy tàn của bọn chúng!”
+
+Zarathustra tự nhủ lòng mình như thế, trong khi mặt trời nằm trên thiên đỉnh; rồi hắn ngước mắt nhìn dò hỏi - vì hắn nghe trên đầu mình tiếng kêu sắc lạnh của một con chim. Và kìa! Một con ó lượn thành những vòng tròn rộng trên trời, và một con rắn treo tòn ten nơi cổ ó, không giống như một con mồi nhưng như một người bạn: vì rắn quấn vòng quanh cổ ó.
+
+“Những con thú của ta!” Zarathustra bảo thế và lòng hắn dấy lên nỗi hân hoan êm ả.
+
+“Con vật kiêu hãnh nhất dưới ánh mặt trời và con vật giảo hoạt nhất dưới ánh mặt trời chúng đã lên đường trong sự biết ơn.
+
+Chúng đã muốn biết xem liệu Zarathustra có còn sống không. Thật ra, ta hãy còn sống chăng?
+
+Ta đã gặp nhiều nguy hiểm giữa loài người hơn là giữa loài thú. Zarathustra đang theo những con đường nguy hiểm. Cầu xin những con vật của ta hướng dẫn ta!”
+
+Khi Zarathustra đã nói như thế xong, hắn nhớ lại những lời của vị thánh già nua trong khu rừng, hắn thở dài nhủ với lòng mình như vầy:
+
+“Ta còn phải khôn ngoan trí huệ hơn nữa! Ước gì ta giảo hoạt từ tận đáy lòng, như con rắn của ta.
+
+Nhưng ta đang đòi hỏi điều không thể được: vậy thì ta cầu xin cho lòng kiêu hãnh luôn đi đôi với trí huệ hiền minh của ta.
+
+Và nếu có một ngày nào trí huệ hiền minh bỏ ta: - Hỡi ôi! Nó thích cất cánh tuyệt mù thì ít ra lòng kiêu hãnh cũng tiếp tục tung bay cùng cơn điên của ta!”
+
+Cuộc hạ san của Zarathustra đã bắt đầu như thế.

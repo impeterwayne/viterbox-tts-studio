@@ -91,7 +91,8 @@ def punc_norm(text: str) -> str:
     punc_to_replace = [
         ("...", ", "),
         ("…", ", "),
-        (":", ","),
+        (";", ","),
+        (":", "."),
         (" - ", ", "),
         ("—", "-"),
         ("–", "-"),
@@ -123,15 +124,16 @@ def normalize_text(text: str, language: str = "vi") -> str:
 
 def _split_text_to_sentences(text: str) -> List[str]:
     """Split text into sentences by punctuation marks."""
-    # Split by . ? ! ; and keep the delimiter
-    pattern = r'([.?!;]+)'
+    # Split by . ? ! ; : and keep the delimiter + any trailing quotes/brackets
+    # e.g. !" stays together, so we don't push the closing quote to the next sentence
+    pattern = r'([.?!;:]+["\u201d\u2019\'\)\]\}]*)'
     parts = re.split(pattern, text)
     
     sentences = []
     current = ""
     for i, part in enumerate(parts):
         if re.match(pattern, part):
-            # This is punctuation, append to current sentence
+            # This is punctuation (+ optional trailing quote), append to current sentence
             current += part
             if current.strip():
                 sentences.append(current.strip())
@@ -677,6 +679,13 @@ class Viterbox:
             if len(sentences) == 0:
                 sentences = [text]
             
+            # Replace ; and : with . BEFORE normalization
+            # (SoeNormalizer would otherwise convert them to Vietnamese words)
+            def _clean_delimiters(s):
+                s = s.replace(";", ",").replace(":", ".").replace("!", ".").replace("?", ".")
+                return s
+            sentences = [_clean_delimiters(s) for s in sentences]
+            
             # Normalize each sentence individually (preserves sentence boundaries)
             sentences = [normalize_text(s, language) for s in sentences]
             
@@ -718,8 +727,18 @@ class Viterbox:
             else:
                 return torch.zeros(1, self.sr)  # 1 second of silence as fallback
         else:
-            # Single generation without splitting - normalize the whole text
+            # Single generation without splitting
+            # Protect punctuation from SoeNormalizer (converts them to Vietnamese words / strips periods)
+            # Replace with placeholders, normalize, then restore as proper punctuation
+            _PH_SEMI  = "\uFFFB"
+            _PH_COLON = "\uFFFC"
+            _PH_EXCL  = "\uFFFD"
+            _PH_QUES  = "\uFFFE"
+            text = text.replace(";", _PH_SEMI).replace(":", _PH_COLON)
+            text = text.replace("!", _PH_EXCL).replace("?", _PH_QUES)
             text = normalize_text(text, language)
+            text = text.replace(_PH_SEMI, ".").replace(_PH_COLON, ".")
+            text = text.replace(_PH_EXCL, ".").replace(_PH_QUES, ".")
             audio_np = self._generate_single(
                 text=text,
                 language=language,

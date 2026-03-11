@@ -3,7 +3,7 @@ chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 :: ============================================================
-::  Viterbox TTS — Run with Virtual Environment
+::  Viterbox Studio — Run with Virtual Environment
 :: ============================================================
 ::  Usage:
 ::    run.bat              → Normal launch
@@ -27,7 +27,7 @@ for %%A in (%*) do (
 
 echo.
 echo ══════════════════════════════════════════════════════
-echo   🎙️  Viterbox TTS Launcher
+echo   🎙️  Viterbox Studio Launcher
 echo ══════════════════════════════════════════════════════
 echo.
 
@@ -112,15 +112,15 @@ if "%REINSTALL%"=="1" (
 )
 
 :: ── Step 4: Launch the app ────────────────────────────
-echo [4/4] Launching Viterbox TTS...
+echo [4/4] Launching Viterbox Studio...
 echo.
 echo ══════════════════════════════════════════════════════
-echo   🌐 Open in browser: http://localhost:7860
+echo   🌐 Open in browser: http://localhost:7861
 echo   Press Ctrl+C to stop the server
 echo ══════════════════════════════════════════════════════
 echo.
 
-python app.py
+python studio_api.py
 
 :: Deactivate on exit
 deactivate >nul 2>&1

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viterbox Studio — Audiobook Production</title>
+    <meta name="description"
+        content="Professional TTS audiobook production studio with per-sentence control, waveform visualization, and export.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ═══ Top Bar ═══ -->
+    <header id="top-bar">
+        <div class="logo">
+            <span class="logo-icon">🎙️</span>
+            <span class="logo-text">Viterbox <span class="logo-accent">Studio</span></span>
+        </div>
+        <div class="top-controls">
+            <div class="control-group">
+                <label for="voice-select">Voice</label>
+                <div class="voice-select-row">
+                    <select id="voice-select"></select>
+                    <button id="voice-preview-btn" class="icon-btn voice-preview-btn" title="Preview voice">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <polygon points="5,3 19,12 5,21" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="language-select">Language</label>
+                <select id="language-select">
+                    <option value="vi">🇻🇳 Tiếng Việt</option>
+                    <option value="en">🇺🇸 English</option>
+                </select>
+            </div>
+            <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+        </div>
+    </header>
+
+    <!-- ═══ Main Content ═══ -->
+    <main id="workspace">
+        <!-- Left Panel: Script Editor -->
+        <section id="editor-panel" class="panel">
+            <div class="panel-header">
+                <h2>📝 Script Editor</h2>
+                <span id="char-count" class="badge">0 chars</span>
+            </div>
+            <textarea id="script-editor"
+                placeholder="Paste your book text, article, or script here...&#10;&#10;Each sentence will become a separate audio segment that you can control individually.&#10;&#10;Tip: Use proper punctuation (periods, question marks) for best sentence splitting."
+                spellcheck="false"></textarea>
+            <div class="panel-actions">
+                <button id="split-btn" class="btn btn-ghost">
+                    <span class="btn-icon">✂️</span>
+                    Split
+                </button>
+                <button id="smart-split-btn" class="btn btn-primary">
+                    <span class="btn-icon">✨</span>
+                    Smart Split (AI)
+                </button>
+                <button id="clear-btn" class="btn btn-ghost">Clear</button>
+                <div class="panel-actions-divider"></div>
+                <button id="save-config-btn" class="btn btn-ghost" disabled
+                    title="Save current sentence configs as JSON">
+                    <span class="btn-icon">💾</span>
+                    Save Config
+                </button>
+                <button id="load-config-btn" class="btn btn-ghost" title="Load sentence configs from JSON">
+                    <span class="btn-icon">📂</span>
+                    Load Config
+                </button>
+                <input type="file" id="config-file-input" accept=".json" hidden>
+            </div>
+        </section>
+
+        <!-- Right Panel: Sentence Timeline -->
+        <section id="timeline-panel" class="panel">
+            <div class="panel-header">
+                <h2>🎚️ Sentence Timeline</h2>
+                <div class="panel-header-actions">
+                    <span id="sentence-count" class="badge">0 sentences</span>
+                    <button id="generate-all-btn" class="btn btn-accent btn-sm" disabled>
+                        <span class="btn-icon">⚡</span>
+                        Generate All
+                    </button>
+                </div>
+            </div>
+
+            <div id="sentences-list" class="sentences-list">
+                <div class="empty-state">
+                    <div class="empty-icon">📖</div>
+                    <p>Paste your text in the editor and click<br>"Split into Sentences" to get started</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══ Bottom Bar: Global Playback & Export ═══ -->
+    <footer id="bottom-bar">
+        <div class="playback-controls">
+            <button id="play-all-btn" class="icon-btn play-btn" disabled title="Play All">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <polygon points="5,3 19,12 5,21" fill="currentColor" />
+                </svg>
+            </button>
+            <button id="stop-btn" class="icon-btn" disabled title="Stop">
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                    <rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="progress-section">
+            <span id="current-time" class="time-label">0:00</span>
+            <div id="progress-bar" class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+                <div id="progress-cursor" class="progress-cursor"></div>
+            </div>
+            <span id="total-time" class="time-label">0:00</span>
+        </div>
+
+        <div class="export-controls">
+            <div class="control-group compact">
+                <label for="global-pause">Pause</label>
+                <select id="global-pause">
+                    <option value="200">0.2s</option>
+                    <option value="300">0.3s</option>
+                    <option value="500" selected>0.5s</option>
+                    <option value="700">0.7s</option>
+                    <option value="1000">1.0s</option>
+                    <option value="1500">1.5s</option>
+                </select>
+            </div>
+            <button id="export-btn" class="btn btn-export" disabled>
+                <span class="btn-icon">💾</span>
+                Export WAV
+            </button>
+            <button id="export-srt-btn" class="btn btn-ghost" disabled title="Generate SRT subtitle file">
+                <span class="btn-icon">📄</span>
+                Export SRT
+            </button>
+        </div>
+    </footer>
+
+    <!-- ═══ Settings Modal ═══ -->
+    <div id="settings-modal" class="modal" hidden>
+        <div class="modal-backdrop"></div>
+        <div class="modal-content panel">
+            <div class="panel-header">
+                <h2>⚙️ Generation Settings</h2>
+                <button class="icon-btn modal-close">✕</button>
+            </div>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="setting-exaggeration">Exaggeration</label>
+                    <input type="range" id="setting-exaggeration" min="0" max="2" step="0.05" value="0.5">
+                    <span class="setting-value" data-for="setting-exaggeration">0.5</span>
+                </div>
+                <div class="setting-item">
+                    <label for="setting-cfg">CFG Weight</label>
+                    <input type="range" id="setting-cfg" min="0" max="1" step="0.05" value="0.5">
+                    <span class="setting-value" data-for="setting-cfg">0.5</span>
+                </div>
+                <div class="setting-item">
+                    <label for="setting-temperature">Temperature</label>
+                    <input type="range" id="setting-temperature" min="0.1" max="1" step="0.05" value="0.8">
+                    <span class="setting-value" data-for="setting-temperature">0.8</span>
+                </div>
+                <div class="setting-item">
+                    <label for="setting-crossfade">Crossfade (ms)</label>
+                    <input type="range" id="setting-crossfade" min="0" max="200" step="10" value="50">
+                    <span class="setting-value" data-for="setting-crossfade">50</span>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary modal-close">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ Toast Notifications ═══ -->
+    <div id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
