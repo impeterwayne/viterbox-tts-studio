@@ -9,10 +9,16 @@
 
 const API = '';  // Same origin
 
-/** Build a session-aware audio URL.  e.g. /api/audio/session_id/001_abc.wav */
-function audioUrl(filename) {
-    if (state.session_id) return `${API}/api/audio/${state.session_id}/${filename}`;
-    return `${API}/api/audio/${filename}`;
+/** Build a session-aware audio URL.  e.g. /api/audio/session_id/001_abc.wav
+ *  @param {string} filename
+ *  @param {number} [version] - cache-busting version (incremented on regen)
+ */
+function audioUrl(filename, version) {
+    let url;
+    if (state.session_id) url = `${API}/api/audio/${state.session_id}/${filename}`;
+    else url = `${API}/api/audio/${filename}`;
+    if (version) url += `?v=${version}`;
+    return url;
 }
 let state = {
     sentences: [],           // [{id, index, text, status, audio_file, duration, pause_after_ms}]
@@ -58,6 +64,8 @@ const DOM = {
     configFileInput: $('#config-file-input'),
     voicePreviewBtn: $('#voice-preview-btn'),
     exportSrtBtn: $('#export-srt-btn'),
+    importVoiceBtn: $('#import-voice-btn'),
+    voiceFileInput: $('#voice-file-input'),
 };
 
 // ═══════════════════════════════════════════════════════════
@@ -105,24 +113,85 @@ function setupEventListeners() {
     // Voice preview
     DOM.voicePreviewBtn.addEventListener('click', previewVoice);
 
+    // Voice import
+    DOM.importVoiceBtn.addEventListener('click', () => DOM.voiceFileInput.click());
+    DOM.voiceFileInput.addEventListener('change', importVoice);
+
     // Global pause change → update all sentences
     DOM.globalPause.addEventListener('change', applyGlobalPause);
 }
+
+// Master voice list — kept in sync so per-sentence dropdowns can be rebuilt
+let voiceList = [];
 
 async function loadVoices() {
     try {
         const res = await fetch(`${API}/api/voices`);
         const data = await res.json();
-        DOM.voiceSelect.innerHTML = '';
-        data.voices.forEach(v => {
-            const opt = document.createElement('option');
-            opt.value = v.path;
-            opt.textContent = v.name;
-            if (v.name.includes('voice0')) opt.selected = true;
-            DOM.voiceSelect.appendChild(opt);
-        });
+        voiceList = data.voices;
+        _populateVoiceSelect(DOM.voiceSelect, voiceList, 'voice0');
     } catch (e) {
         toast('Could not load voices', 'error');
+    }
+}
+
+/** Populate any <select> element with the current voice list */
+function _populateVoiceSelect(selectEl, voices, defaultHint) {
+    const prev = selectEl.value;  // preserve current selection
+    selectEl.innerHTML = '';
+    voices.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v.path;
+        opt.textContent = v.name;
+        selectEl.appendChild(opt);
+    });
+    // Restore previous selection or fall back to hint
+    if (prev && [...selectEl.options].some(o => o.value === prev)) {
+        selectEl.value = prev;
+    } else if (defaultHint) {
+        const match = [...selectEl.options].find(o => o.textContent.includes(defaultHint));
+        if (match) selectEl.value = match.value;
+    }
+}
+
+async function importVoice(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    DOM.importVoiceBtn.classList.add('uploading');
+    try {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const res = await fetch(`${API}/api/import-voice`, {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (!res.ok) {
+            const err = await res.json().catch(() => ({}));
+            throw new Error(err.detail || 'Upload failed');
+        }
+
+        const newVoice = await res.json();
+        // Add to master voice list
+        voiceList.push(newVoice);
+
+        // Refresh global dropdown and select the new voice
+        _populateVoiceSelect(DOM.voiceSelect, voiceList);
+        DOM.voiceSelect.value = newVoice.path;
+
+        // Refresh all per-sentence voice dropdowns
+        DOM.sentencesList.querySelectorAll('.sc-voice-select').forEach(sel => {
+            _populateVoiceSelect(sel, voiceList);
+        });
+
+        toast(`📥 Imported voice: ${newVoice.name}`, 'success');
+    } catch (err) {
+        toast(`Voice import failed: ${err.message}`, 'error');
+    } finally {
+        DOM.importVoiceBtn.classList.remove('uploading');
+        DOM.voiceFileInput.value = '';  // allow re-selecting same file
     }
 }
 
@@ -323,6 +392,13 @@ function renderSentences() {
                 </div>
                 <!-- Per-sentence config panel -->
                 <div class="sentence-config ${s.showConfig ? 'open' : ''}" data-id="${s.id}">
+                    <div class="sc-row sc-voice-row">
+                        <label>Voice</label>
+                        <select class="sc-voice-select" data-id="${s.id}">
+                            ${voiceList.map(v => `<option value="${v.path}" ${v.path === (cfg(s).voice || DOM.voiceSelect.value) ? 'selected' : ''}>${v.name}</option>`).join('')}
+                        </select>
+                        <span class="sc-val sc-voice-badge">${cfg(s).voice && cfg(s).voice !== DOM.voiceSelect.value ? '✦' : ''}</span>
+                    </div>
                     <div class="sc-row">
                         <label>Exagg</label>
                         <input type="range" class="sc-slider" data-id="${s.id}" data-key="exaggeration"
@@ -392,6 +468,19 @@ function renderSentences() {
                 // Update the value display next to the slider
                 const valSpan = slider.nextElementSibling;
                 if (valSpan) valSpan.textContent = slider.value;
+            }
+        });
+    });
+
+    // Per-sentence voice select
+    DOM.sentencesList.querySelectorAll('.sc-voice-select').forEach(sel => {
+        sel.addEventListener('change', (e) => {
+            const s = state.sentences.find(s => s.id === sel.dataset.id);
+            if (s && s.config) {
+                s.config.voice = sel.value;
+                // Update the badge indicator
+                const badge = sel.closest('.sc-voice-row')?.querySelector('.sc-voice-badge');
+                if (badge) badge.textContent = sel.value !== DOM.voiceSelect.value ? '✦' : '';
             }
         });
     });
@@ -473,6 +562,7 @@ async function generateSentence(id) {
         sentence.status = 'done';
         sentence.audio_file = data.audio_file;
         sentence.duration = data.duration;
+        sentence._audioVersion = (sentence._audioVersion || 0) + 1;
     } catch (e) {
         sentence.status = 'error';
         toast(`Error: ${e.message}`, 'error');
@@ -545,6 +635,7 @@ async function generateAll() {
                 sentence.status = 'done';
                 sentence.audio_file = data.audio_file;
                 sentence.duration = data.duration;
+                sentence._audioVersion = (sentence._audioVersion || 0) + 1;
             } catch (e) {
                 sentence.status = 'error';
                 toast(`Error generating "${sentence.text.slice(0, 30)}...": ${e.message}`, 'error');
@@ -693,7 +784,7 @@ async function drawWaveform(id) {
     if (!canvas) return;
 
     try {
-        const res = await fetch(audioUrl(sentence.audio_file));
+        const res = await fetch(audioUrl(sentence.audio_file, sentence._audioVersion));
         const buffer = await res.arrayBuffer();
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         const decoded = await audioCtx.decodeAudioData(buffer);
@@ -805,7 +896,7 @@ function playSentence(id) {
     $$('.sentence-row.playing').forEach(el => el.classList.remove('playing'));
     state.currentlyPlaying = null;
 
-    currentAudio = new Audio(audioUrl(sentence.audio_file));
+    currentAudio = new Audio(audioUrl(sentence.audio_file, sentence._audioVersion));
     state.currentlyPlaying = id;
 
     // Highlight
@@ -880,7 +971,7 @@ async function playAll() {
 
         // Play this sentence
         await new Promise((resolve) => {
-            currentAudio = new Audio(audioUrl(s.audio_file));
+            currentAudio = new Audio(audioUrl(s.audio_file, s._audioVersion));
             state.currentlyPlaying = s.id;
 
             const row = document.getElementById(`sentence-${s.id}`);

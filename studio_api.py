@@ -18,7 +18,7 @@ import librosa
 import soundfile as sf
 from pathlib import Path
 from typing import Optional, List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -194,6 +194,42 @@ async def list_voices():
         for f in sorted(wav_dir.glob("*.wav")) + sorted(wav_dir.glob("*.mp3")):
             voices.append({"name": f.stem, "path": str(f)})
     return {"voices": voices}
+
+
+@app.post("/api/import-voice")
+async def import_voice(file: UploadFile = File(...)):
+    """Import a voice reference audio file into wavs/ directory."""
+    wav_dir = Path("wavs")
+    wav_dir.mkdir(exist_ok=True)
+
+    # Validate extension
+    ext = Path(file.filename).suffix.lower()
+    if ext not in (".wav", ".mp3"):
+        raise HTTPException(400, "Only .wav and .mp3 files are supported")
+
+    # Build unique filename to avoid collisions
+    stem = Path(file.filename).stem
+    # Sanitize filename
+    safe_stem = _re.sub(r'[^\w\-]', '_', stem, flags=_re.UNICODE).strip('_') or 'imported_voice'
+    dest = wav_dir / f"{safe_stem}{ext}"
+
+    # If file already exists, append a counter
+    counter = 1
+    while dest.exists():
+        dest = wav_dir / f"{safe_stem}_{counter}{ext}"
+        counter += 1
+
+    # Save the uploaded file
+    content = await file.read()
+    with open(dest, "wb") as f:
+        f.write(content)
+
+    print(f"  📥 Imported voice: {dest.name} ({len(content) / 1024:.1f} KB)")
+
+    return {
+        "name": dest.stem,
+        "path": str(dest),
+    }
 
 
 @app.post("/api/split")

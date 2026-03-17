@@ -33,7 +33,8 @@ venv/
 *.swo
 
 # Project specific
-
+studio_output/
+app.log
 !wavs/.gitkeep
 outputs/
 

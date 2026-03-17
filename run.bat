@@ -81,18 +81,36 @@ if "%REINSTALL%"=="1" (
         echo       Mode: CUDA (GPU^)
         pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 --quiet
     )
+    if errorlevel 1 (
+        echo.
+        echo ❌ Failed to install PyTorch! See errors above.
+        pause
+        exit /b 1
+    )
 
     :: Install remaining requirements
     pip install -r requirements.txt --quiet
+    if errorlevel 1 (
+        echo.
+        echo ❌ Failed to install requirements! See errors above.
+        pause
+        exit /b 1
+    )
 
     :: Install the package itself in editable mode
     pip install -e . --quiet
+    if errorlevel 1 (
+        echo.
+        echo ❌ Failed to install viterbox package! See errors above.
+        pause
+        exit /b 1
+    )
 
     echo.
     echo       ✅ All dependencies installed
 ) else (
-    :: Quick check — if torch is missing, trigger install
-    python -c "import torch" >nul 2>&1
+    :: Quick check — if key packages are missing, trigger install
+    python -c "import torch; import librosa; import pyrubberband" >nul 2>&1
     if errorlevel 1 (
         echo       ⚠️  Missing packages detected. Running install...
         echo       (Use --reinstall to force a full reinstall^)
@@ -103,8 +121,26 @@ if "%REINSTALL%"=="1" (
         ) else (
             pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 --quiet
         )
+        if errorlevel 1 (
+            echo.
+            echo ❌ Failed to install PyTorch! See errors above.
+            pause
+            exit /b 1
+        )
         pip install -r requirements.txt --quiet
+        if errorlevel 1 (
+            echo.
+            echo ❌ Failed to install requirements! See errors above.
+            pause
+            exit /b 1
+        )
         pip install -e . --quiet
+        if errorlevel 1 (
+            echo.
+            echo ❌ Failed to install viterbox package! See errors above.
+            pause
+            exit /b 1
+        )
         echo       ✅ Dependencies installed
     ) else (
         echo       ✅ Dependencies OK

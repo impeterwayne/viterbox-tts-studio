@@ -21,7 +21,7 @@
         </div>
         <div class="top-controls">
             <div class="control-group">
-                <label for="voice-select">Voice</label>
+                <label for="voice-select">Default Voice</label>
                 <div class="voice-select-row">
                     <select id="voice-select"></select>
                     <button id="voice-preview-btn" class="icon-btn voice-preview-btn" title="Preview voice">
@@ -29,6 +29,15 @@
                             <polygon points="5,3 19,12 5,21" fill="currentColor" />
                         </svg>
                     </button>
+                    <button id="import-voice-btn" class="icon-btn import-voice-btn" title="Import voice (.wav/.mp3)">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M12 14L12 2M12 2L7 7M12 2L17 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                            <path d="M4 17V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V17" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" fill="none" />
+                        </svg>
+                    </button>
+                    <input type="file" id="voice-file-input" accept=".wav,.mp3" hidden>
                 </div>
             </div>
             <div class="control-group">
